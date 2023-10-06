@@ -4,7 +4,8 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
-# Variables
+
+# Variables initialization 
 grass_texture = load_texture("Assets/Textures/Grass_Block.png")
 stone_texture = load_texture("Assets/Textures/Stone_Block.png")
 brick_texture = load_texture("Assets/Textures/Brick_Block.png")
