@@ -11,12 +11,12 @@ The Simple Minecraft project aims to provide a basic implementation of the popul
 - Simple world generation
 - Collision detection
 
-  
-To run the project, you will need a Python IDE installed on your system.
 
 ## Installation
+  
+To run the project locally, you will need a Python IDE installed on your system.
 
-To run the project locally, follow these steps:
+then follow these steps:
 1. Clone the repository:
 
    ````shell
@@ -35,17 +35,12 @@ To run the project locally, follow these steps:
 
 ## Usage
 
-To start the game, execute the following command:
-
-```shell
-python main.py
-```
-
 Once the game is running, you can use the following controls:
 
 - W, A, S, D: Move the player forward, left, backward, and right, respectively.
 - Space: Jump.
 - Mouse: Look around.
+- 1,2,3,4,5 to change between different blocks.
 
 ## Acknowledgments
 
