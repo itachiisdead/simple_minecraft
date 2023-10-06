@@ -16,7 +16,7 @@ punch_sound = Audio("Assets/SFX/Punch_Sound.wav", loop = False, autoplay = False
 window.exit_button.visible = False
 block_pick = 1
 
-# Updates every frame
+#frames update
 def update():
     global block_pick
 
@@ -33,7 +33,7 @@ def update():
 
 
 
-# Voxel (block) properties
+#block properties
 class Voxel(Button):
     def __init__(self, position = (0, 0, 0), texture = grass_texture):
         super().__init__(
@@ -47,7 +47,7 @@ class Voxel(Button):
             scale = 0.5
         )
     
-    # What happens to blocks on inputs
+    #blocks after entering inputs
     def input(self,key):
         if self.hovered:
             if key == "left mouse down":
@@ -63,7 +63,7 @@ class Voxel(Button):
                 punch_sound.play()
                 destroy(self)
 
-# Skybox
+#Skybox
 class Sky(Entity):
     def __init__(self):
         super().__init__(
@@ -74,7 +74,7 @@ class Sky(Entity):
             double_sided = True
         )
 
-# Arm
+#hand
 class Hand(Entity):
     def __init__(self):
         super().__init__(
@@ -92,7 +92,7 @@ class Hand(Entity):
     def passive(self):
         self.position = Vec2(0.4, -0.6)
 
-
+#the world
 for z in range(25):
     for x in range(25):
         voxel = Voxel(position = (x, 0, z))
