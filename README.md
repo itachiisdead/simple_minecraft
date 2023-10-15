@@ -31,7 +31,6 @@ then follow these steps:
 
 3. Open the project in your Python IDE.
 
-4. Build and run the project using the IDE's execution features.
 
 ## Usage
 
